@@ -1,5 +1,9 @@
 ## CDGSwiftSDK
 
+[![Build Status](https://api.travis-ci.org/sgcodigo/CDGSwiftExtensions.svg?branch=master)](https://travis-ci.org/sgcodigo/CDGSwiftExtensions)
+[![codecov.io](https://codecov.io/gh/sgcodigo/CDGSwiftExtensions/branch/master/graphs/badge.svg)](https://codecov.io/gh/sgcodigo/CDGSwiftExtensions/branch/master)
+
+
 iOS SDK for developers, Codigo style.
 
 This SDK contains really common methods that are used in many of our projects.
@@ -41,7 +45,7 @@ pod 'CDGSwiftExtensions'
 ```
 
 ## License
-CDGSwiftIntExtension is available under the MIT license. See the [LICENSE file](https://github.com/sgcodigo/CDGSwiftSDK/blob/master/LICENSE).
+CDGSwiftExtensions is available under the MIT license. See the [LICENSE file](https://github.com/sgcodigo/CDGSwiftSDK/blob/master/LICENSE).
 
 ## Keywords
 swift, extension, codigo, singletons, UI, UIKit, helpers, services

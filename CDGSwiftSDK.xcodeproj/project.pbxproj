@@ -15,6 +15,7 @@
 		231DADD61F970F6400DCC318 /* DoubleExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 231DADD51F970F6400DCC318 /* DoubleExtensions.swift */; };
 		231DADD71F970F6400DCC318 /* DoubleExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 231DADD51F970F6400DCC318 /* DoubleExtensions.swift */; };
 		231DADD91F9713DE00DCC318 /* DoubleExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 231DADD81F9713DE00DCC318 /* DoubleExtensionsTests.swift */; };
+		231DADE11F9719B400DCC318 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 231DADE01F9719B400DCC318 /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +38,7 @@
 		231DADD31F96EB0400DCC318 /* IntExtensionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntExtensionsTests.swift; sourceTree = "<group>"; };
 		231DADD51F970F6400DCC318 /* DoubleExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoubleExtensions.swift; sourceTree = "<group>"; };
 		231DADD81F9713DE00DCC318 /* DoubleExtensionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoubleExtensionsTests.swift; sourceTree = "<group>"; };
+		231DADE01F9719B400DCC318 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +91,7 @@
 		231DADC21F96EA8900DCC318 /* CDGSwiftSDKTests */ = {
 			isa = PBXGroup;
 			children = (
+				231DADDF1F97199F00DCC318 /* Support */,
 				231DADC51F96EA8900DCC318 /* Info.plist */,
 				231DADD31F96EB0400DCC318 /* IntExtensionsTests.swift */,
 				231DADD81F9713DE00DCC318 /* DoubleExtensionsTests.swift */,
@@ -103,6 +106,14 @@
 				231DADD51F970F6400DCC318 /* DoubleExtensions.swift */,
 			);
 			path = CDGSwiftExtensions;
+			sourceTree = "<group>";
+		};
+		231DADDF1F97199F00DCC318 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				231DADE01F9719B400DCC318 /* User.swift */,
+			);
+			path = Support;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -229,6 +240,7 @@
 				231DADD41F96EB0400DCC318 /* IntExtensionsTests.swift in Sources */,
 				231DADD71F970F6400DCC318 /* DoubleExtensions.swift in Sources */,
 				231DADD21F96EABD00DCC318 /* IntExtensions.swift in Sources */,
+				231DADE11F9719B400DCC318 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -15,6 +15,9 @@
 		231DADD61F970F6400DCC318 /* DoubleExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 231DADD51F970F6400DCC318 /* DoubleExtensions.swift */; };
 		231DADD71F970F6400DCC318 /* DoubleExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 231DADD51F970F6400DCC318 /* DoubleExtensions.swift */; };
 		231DADD91F9713DE00DCC318 /* DoubleExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 231DADD81F9713DE00DCC318 /* DoubleExtensionsTests.swift */; };
+		231DADDB1F9717DF00DCC318 /* ArrayExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 231DADDA1F9717DF00DCC318 /* ArrayExtensions.swift */; };
+		231DADDC1F9717DF00DCC318 /* ArrayExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 231DADDA1F9717DF00DCC318 /* ArrayExtensions.swift */; };
+		231DADDE1F97186D00DCC318 /* ArrayExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 231DADDD1F97186D00DCC318 /* ArrayExtensionsTests.swift */; };
 		231DADE11F9719B400DCC318 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 231DADE01F9719B400DCC318 /* User.swift */; };
 /* End PBXBuildFile section */
 
@@ -38,6 +41,8 @@
 		231DADD31F96EB0400DCC318 /* IntExtensionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntExtensionsTests.swift; sourceTree = "<group>"; };
 		231DADD51F970F6400DCC318 /* DoubleExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoubleExtensions.swift; sourceTree = "<group>"; };
 		231DADD81F9713DE00DCC318 /* DoubleExtensionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoubleExtensionsTests.swift; sourceTree = "<group>"; };
+		231DADDA1F9717DF00DCC318 /* ArrayExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayExtensions.swift; sourceTree = "<group>"; };
+		231DADDD1F97186D00DCC318 /* ArrayExtensionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayExtensionsTests.swift; sourceTree = "<group>"; };
 		231DADE01F9719B400DCC318 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -95,6 +100,7 @@
 				231DADC51F96EA8900DCC318 /* Info.plist */,
 				231DADD31F96EB0400DCC318 /* IntExtensionsTests.swift */,
 				231DADD81F9713DE00DCC318 /* DoubleExtensionsTests.swift */,
+				231DADDD1F97186D00DCC318 /* ArrayExtensionsTests.swift */,
 			);
 			path = CDGSwiftSDKTests;
 			sourceTree = "<group>";
@@ -104,6 +110,7 @@
 			children = (
 				231DADD01F96EABD00DCC318 /* IntExtensions.swift */,
 				231DADD51F970F6400DCC318 /* DoubleExtensions.swift */,
+				231DADDA1F9717DF00DCC318 /* ArrayExtensions.swift */,
 			);
 			path = CDGSwiftExtensions;
 			sourceTree = "<group>";
@@ -228,6 +235,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				231DADD61F970F6400DCC318 /* DoubleExtensions.swift in Sources */,
+				231DADDB1F9717DF00DCC318 /* ArrayExtensions.swift in Sources */,
 				231DADD11F96EABD00DCC318 /* IntExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -237,6 +245,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				231DADD91F9713DE00DCC318 /* DoubleExtensionsTests.swift in Sources */,
+				231DADDE1F97186D00DCC318 /* ArrayExtensionsTests.swift in Sources */,
+				231DADDC1F9717DF00DCC318 /* ArrayExtensions.swift in Sources */,
 				231DADD41F96EB0400DCC318 /* IntExtensionsTests.swift in Sources */,
 				231DADD71F970F6400DCC318 /* DoubleExtensions.swift in Sources */,
 				231DADD21F96EABD00DCC318 /* IntExtensions.swift in Sources */,

@@ -13,7 +13,7 @@ extension Array {
      CDGSwiftSDK
      Converts all the elements of array into the `Stringified` version
      */
-    var string: Array<String> {
+    public var string: Array<String> {
         return self.map { String(describing: $0) }
     }
     
@@ -21,7 +21,7 @@ extension Array {
      CDGSwiftSDK
      Break array into steps (or chunks) of desired sizes
      */
-    func splitIntoChunks(ofSize chunkSize: Int) -> [[Element]] {
+    public func chunk(_ chunkSize: Int) -> [[Element]] {
         return stride(from: 0, to: self.count, by: chunkSize).map {
             Array(self[$0..<Swift.min($0 + chunkSize, self.count)])
         }

@@ -35,31 +35,31 @@ class ArrayExtensionsTests: XCTestCase {
         XCTAssertEqual(usersArray.string, ["Victor Leong, 1.88m", "Vic L, 1.88m", "Jia cheng, 1.88m"])
     }
     
-    func testSplitIntoChunks() {
+    func testChunk() {
         XCTAssertTrue(stringArray == stringArray)
 
-        var splitStringArray = stringArray.splitIntoChunks(ofSize: 2)
+        var splitStringArray = stringArray.chunk(2)
         XCTAssertTrue(splitStringArray[0] == ["qwe", "asd"])
         XCTAssertTrue(splitStringArray[1] == ["zxc"])
-        splitStringArray = stringArray.splitIntoChunks(ofSize: 3)
+        splitStringArray = stringArray.chunk(3)
         XCTAssertTrue(splitStringArray[0] == ["qwe", "asd", "zxc"])
-        splitStringArray = stringArray.splitIntoChunks(ofSize: 4)
+        splitStringArray = stringArray.chunk(4)
         XCTAssertTrue(splitStringArray[0] == ["qwe", "asd", "zxc"])
         
-        var splitDoubleArray = doubleArray.splitIntoChunks(ofSize: 2)
+        var splitDoubleArray = doubleArray.chunk(2)
         XCTAssertTrue(splitDoubleArray[0] == [12.0, 123.0])
         XCTAssertTrue(splitDoubleArray[1] == [12.64345])
-        splitDoubleArray = doubleArray.splitIntoChunks(ofSize: 3)
+        splitDoubleArray = doubleArray.chunk(3)
         XCTAssertTrue(splitDoubleArray[0] == [12.0, 123.0, 12.64345])
-        splitDoubleArray = doubleArray.splitIntoChunks(ofSize: 4)
+        splitDoubleArray = doubleArray.chunk(4)
         XCTAssertTrue(splitDoubleArray[0] == [12.0, 123.0, 12.64345])
         
-        var splitUsersArray = usersArray.splitIntoChunks(ofSize: 2)
+        var splitUsersArray = usersArray.chunk(2)
         XCTAssertTrue(splitUsersArray[0].elementsEqual([user1, user2]))
         XCTAssertTrue(splitUsersArray[1].elementsEqual([user3]))
-        splitUsersArray = usersArray.splitIntoChunks(ofSize: 3)
+        splitUsersArray = usersArray.chunk(3)
         XCTAssertTrue(splitUsersArray[0].elementsEqual([user1, user2, user3]))
-        splitUsersArray = usersArray.splitIntoChunks(ofSize: 4)
+        splitUsersArray = usersArray.chunk(4)
         XCTAssertTrue(splitUsersArray[0].elementsEqual([user1, user2, user3]))
     }
 }

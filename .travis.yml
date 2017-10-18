@@ -1,0 +1,10 @@
+language: swift
+osx_image: xcode9.0
+xcode_project: CDGSwiftSDK.xcodeproj
+xcode_scheme: CDGSwiftExtensions
+xcode_sdk: iphonesimulator10.3
+
+script:
+    - xcodebuild clean build -sdk iphonesimulator -project CDGSwiftSDK.xcodeproj -scheme CDGSwiftSDK CODE_SIGNING_REQUIRED=NO
+after_success:
+  - bash <(curl -s https://codecov.io/bash)

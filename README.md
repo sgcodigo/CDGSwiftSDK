@@ -23,7 +23,7 @@ use_frameworks!
 pod 'CDGSwiftExtensions'
 ```
 
-## Usage
+## Usage - TODO split into the different kits
 
 ```swift
 10.isEven // true

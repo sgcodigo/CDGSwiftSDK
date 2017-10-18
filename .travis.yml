@@ -4,6 +4,9 @@ xcode_project: CDGSwiftSDK.xcodeproj
 xcode_scheme: CDGSwiftExtensions
 xcode_sdk: iphonesimulator10.3
 
+notifications:
+  slack: codigogroup:1zV3XPCGMITw3gKhy3qQiVWk
+
 script:
     - xcodebuild clean build -sdk iphonesimulator -project CDGSwiftSDK.xcodeproj -scheme CDGSwiftSDK CODE_SIGNING_REQUIRED=NO
 after_success:

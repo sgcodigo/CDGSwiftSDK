@@ -8,8 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		231DADBF1F96EA8900DCC318 /* CDGSwiftSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 231DADB51F96EA8900DCC318 /* CDGSwiftSDK.framework */; };
-		231DADC41F96EA8900DCC318 /* CDGSwiftSDKTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 231DADC31F96EA8900DCC318 /* CDGSwiftSDKTests.swift */; };
 		231DADC61F96EA8900DCC318 /* CDGSwiftSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = 231DADB81F96EA8900DCC318 /* CDGSwiftSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		231DADD11F96EABD00DCC318 /* IntExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 231DADD01F96EABD00DCC318 /* IntExtensions.swift */; };
+		231DADD21F96EABD00DCC318 /* IntExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 231DADD01F96EABD00DCC318 /* IntExtensions.swift */; };
+		231DADD41F96EB0400DCC318 /* IntExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 231DADD31F96EB0400DCC318 /* IntExtensionsTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,8 +29,9 @@
 		231DADB81F96EA8900DCC318 /* CDGSwiftSDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CDGSwiftSDK.h; sourceTree = "<group>"; };
 		231DADB91F96EA8900DCC318 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		231DADBE1F96EA8900DCC318 /* CDGSwiftSDKTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CDGSwiftSDKTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		231DADC31F96EA8900DCC318 /* CDGSwiftSDKTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CDGSwiftSDKTests.swift; sourceTree = "<group>"; };
 		231DADC51F96EA8900DCC318 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		231DADD01F96EABD00DCC318 /* IntExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntExtensions.swift; sourceTree = "<group>"; };
+		231DADD31F96EB0400DCC318 /* IntExtensionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntExtensionsTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +56,7 @@
 		231DADAB1F96EA8900DCC318 = {
 			isa = PBXGroup;
 			children = (
+				231DADCF1F96EA9900DCC318 /* CDGSwiftExtensions */,
 				231DADB71F96EA8900DCC318 /* CDGSwiftSDK */,
 				231DADC21F96EA8900DCC318 /* CDGSwiftSDKTests */,
 				231DADB61F96EA8900DCC318 /* Products */,
@@ -80,10 +84,18 @@
 		231DADC21F96EA8900DCC318 /* CDGSwiftSDKTests */ = {
 			isa = PBXGroup;
 			children = (
-				231DADC31F96EA8900DCC318 /* CDGSwiftSDKTests.swift */,
 				231DADC51F96EA8900DCC318 /* Info.plist */,
+				231DADD31F96EB0400DCC318 /* IntExtensionsTests.swift */,
 			);
 			path = CDGSwiftSDKTests;
+			sourceTree = "<group>";
+		};
+		231DADCF1F96EA9900DCC318 /* CDGSwiftExtensions */ = {
+			isa = PBXGroup;
+			children = (
+				231DADD01F96EABD00DCC318 /* IntExtensions.swift */,
+			);
+			path = CDGSwiftExtensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,6 +160,7 @@
 				TargetAttributes = {
 					231DADB41F96EA8900DCC318 = {
 						CreatedOnToolsVersion = 9.0;
+						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 					};
 					231DADBD1F96EA8900DCC318 = {
@@ -196,6 +209,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				231DADD11F96EABD00DCC318 /* IntExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -203,7 +217,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				231DADC41F96EA8900DCC318 /* CDGSwiftSDKTests.swift in Sources */,
+				231DADD41F96EB0400DCC318 /* IntExtensionsTests.swift in Sources */,
+				231DADD21F96EABD00DCC318 /* IntExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -334,6 +349,7 @@
 		231DADCA1F96EA8900DCC318 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -347,6 +363,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = co.codigo.CDGSwiftSDK;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -355,6 +372,7 @@
 		231DADCB1F96EA8900DCC318 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -376,6 +394,7 @@
 		231DADCD1F96EA8900DCC318 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PDYS8RZ74Y;
 				INFOPLIST_FILE = CDGSwiftSDKTests/Info.plist;
@@ -390,6 +409,7 @@
 		231DADCE1F96EA8900DCC318 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PDYS8RZ74Y;
 				INFOPLIST_FILE = CDGSwiftSDKTests/Info.plist;

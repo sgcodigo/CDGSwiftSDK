@@ -11,8 +11,8 @@ import XCTest
 
 class StringExtensionsTests: XCTestCase {
     func testTrim() {
-        let string = " codigo    "
-        XCTAssertEqual(string.trim(), "codigo")
+        XCTAssertEqual(" codigo    ".trim(), "codigo")
+        XCTAssertEqual(" codigo pte ltd    ".trim(), "codigo pte ltd")
     }
     
     func testUnescape() {
@@ -26,8 +26,7 @@ class StringExtensionsTests: XCTestCase {
     }
     
     func testReplace() {
-        let string = "codigo"
-        XCTAssertEqual(string.replace(target: "o", withString: "0"), "c0dig0")
+        XCTAssertEqual("codigo".replace(target: "o", withString: "0"), "c0dig0")
     }
     
     func testIsEmail() {

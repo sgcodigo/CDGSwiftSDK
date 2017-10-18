@@ -13,7 +13,7 @@ extension UIScreen {
      CDGSwiftSDK
      Get screen width of current device
      */
-    public static var screenWidth: CGFloat {
+    public static var width: CGFloat {
         return UIScreen.main.bounds.width
     }
     
@@ -21,7 +21,7 @@ extension UIScreen {
      CDGSwiftSDK
      Get screen height of current device
      */
-    public static var screenHeight: CGFloat {
+    public static var height: CGFloat {
         return UIScreen.main.bounds.height
     }
 }

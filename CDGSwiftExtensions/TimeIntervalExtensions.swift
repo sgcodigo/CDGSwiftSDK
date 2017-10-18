@@ -16,7 +16,7 @@ extension TimeInterval {
      
      - Parameter units: The units to show for the countdown
      */
-    public func toString(units: NSCalendar.Unit) -> String {
+    public func toString(_ units: NSCalendar.Unit) -> String {
         let formatter = DateComponentsFormatter()
         formatter.zeroFormattingBehavior = .pad
         formatter.unitsStyle = .positional

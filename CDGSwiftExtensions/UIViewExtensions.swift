@@ -14,7 +14,7 @@ extension UIView {
      CDGSwiftSDK
      Mask UIView with a rounded radius
      */
-    public func setCornerRadius(value: CGFloat) {
+    public func setCornerRadius(_ value: CGFloat) {
         self.layer.cornerRadius = value
     }
     
@@ -37,7 +37,7 @@ extension UIView {
      Mask UIView with a rounded cover
      */
     public func rounded() {
-        self.setCornerRadius(value: min(self.frame.size.height, self.frame.size.width) / 2)
+        self.setCornerRadius(min(self.frame.size.height, self.frame.size.width) / 2)
         self.layer.borderWidth = 0
     }
     
@@ -49,7 +49,7 @@ extension UIView {
      - Parameter withBorderWidth: Width of rounded border
      */
     public func rounded(withBorderColor color: UIColor, withBorderWidth width: CGFloat) {
-        self.setCornerRadius(value: min(self.frame.size.height, self.frame.size.width) / 2)
+        self.setCornerRadius(min(self.frame.size.height, self.frame.size.width) / 2)
         self.layer.masksToBounds = true
         
         self.layer.borderWidth = width

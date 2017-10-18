@@ -14,7 +14,7 @@ extension Double {
      CDGSwiftSDK
      return string to 2 decimal place
      */
-    public func formattedString(decimalPlaces: Int = 2) -> String {
+    public func toString(decimalPlaces: Int = 2) -> String {
         return String(format: "%.\(decimalPlaces)f", self)
     }
     
@@ -22,7 +22,7 @@ extension Double {
      CDGSwiftSDK
      Automatically calculate the font size for different screen sizes using an algorithm and parameters based on the standard psd settings created by Codigo's Creatives
      */
-    public var fontSize: CGFloat {
+    public var asFontSize: CGFloat {
         let largestiPhoneScreenSize: CGFloat = 414
         let screenRes: CGFloat = 72 // set by psd settings
         let scaleFactor: CGFloat = 3 // set by psd settings

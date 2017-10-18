@@ -23,15 +23,15 @@ class DoubleExtensionsTests: XCTestCase {
         super.tearDown()
     }
     
-    func testFormattedString() {
-        XCTAssertEqual(negativeDbl.formattedString(), "-10.01")
-        XCTAssertEqual(negativeDbl.formattedString(decimalPlaces: 4), "-10.0125")
+    func testtoString() {
+        XCTAssertEqual(negativeDbl.toString(), "-10.01")
+        XCTAssertEqual(negativeDbl.toString(decimalPlaces: 4), "-10.0125")
         
-        XCTAssertEqual(positiveDbl.formattedString(), "100.00")
-        XCTAssertEqual(positiveDbl.formattedString(decimalPlaces: 4), "99.9956")
+        XCTAssertEqual(positiveDbl.toString(), "100.00")
+        XCTAssertEqual(positiveDbl.toString(decimalPlaces: 4), "99.9956")
     }
     
     func testFontsize() {
-        XCTAssertEqual(12.fontSize, CGFloat(4.0))
+        XCTAssertEqual(12.0.asFontSize, CGFloat(4.0))
     }
 }

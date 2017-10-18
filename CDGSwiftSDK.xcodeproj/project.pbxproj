@@ -29,6 +29,8 @@
 		231DADF11F9747B400DCC318 /* TimeIntervalExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 231DADF01F9747B400DCC318 /* TimeIntervalExtensions.swift */; };
 		231DADF21F9747B400DCC318 /* TimeIntervalExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 231DADF01F9747B400DCC318 /* TimeIntervalExtensions.swift */; };
 		231DADF51F9748C300DCC318 /* TimeIntervalExtensionsTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 231DADF31F9748C300DCC318 /* TimeIntervalExtensionsTest.swift */; };
+		231DADF71F9753A800DCC318 /* UITableViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 231DADF61F9753A800DCC318 /* UITableViewExtensions.swift */; };
+		231DADF81F9753A800DCC318 /* UITableViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 231DADF61F9753A800DCC318 /* UITableViewExtensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +62,7 @@
 		231DADED1F97413C00DCC318 /* UIImageExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageExtensions.swift; sourceTree = "<group>"; };
 		231DADF01F9747B400DCC318 /* TimeIntervalExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeIntervalExtensions.swift; sourceTree = "<group>"; };
 		231DADF31F9748C300DCC318 /* TimeIntervalExtensionsTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeIntervalExtensionsTest.swift; sourceTree = "<group>"; };
+		231DADF61F9753A800DCC318 /* UITableViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewExtensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +136,7 @@
 				231DADEA1F973EBF00DCC318 /* UIViewExtensions.swift */,
 				231DADED1F97413C00DCC318 /* UIImageExtensions.swift */,
 				231DADF01F9747B400DCC318 /* TimeIntervalExtensions.swift */,
+				231DADF61F9753A800DCC318 /* UITableViewExtensions.swift */,
 			);
 			path = CDGSwiftExtensions;
 			sourceTree = "<group>";
@@ -263,6 +267,7 @@
 				231DADDB1F9717DF00DCC318 /* ArrayExtensions.swift in Sources */,
 				231DADD11F96EABD00DCC318 /* IntExtensions.swift in Sources */,
 				231DADF11F9747B400DCC318 /* TimeIntervalExtensions.swift in Sources */,
+				231DADF71F9753A800DCC318 /* UITableViewExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -277,6 +282,7 @@
 				231DADDE1F97186D00DCC318 /* ArrayExtensionsTests.swift in Sources */,
 				231DADDC1F9717DF00DCC318 /* ArrayExtensions.swift in Sources */,
 				231DADD41F96EB0400DCC318 /* IntExtensionsTests.swift in Sources */,
+				231DADF81F9753A800DCC318 /* UITableViewExtensions.swift in Sources */,
 				231DADF21F9747B400DCC318 /* TimeIntervalExtensions.swift in Sources */,
 				231DADEC1F973EBF00DCC318 /* UIViewExtensions.swift in Sources */,
 				231DADD71F970F6400DCC318 /* DoubleExtensions.swift in Sources */,

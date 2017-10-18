@@ -8,6 +8,6 @@ notifications:
   slack: codigogroup:1zV3XPCGMITw3gKhy3qQiVWk
 
 script:
-    - xcodebuild clean build -sdk iphonesimulator -project CDGSwiftSDK.xcodeproj -scheme CDGSwiftSDK CODE_SIGNING_REQUIRED=NO
+    - xcodebuild clean build CODE_SIGNING_REQUIRED=NO
 after_success:
   - bash <(curl -s https://codecov.io/bash)

@@ -20,7 +20,7 @@ Pod::Spec.new do |s|
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
   s.description  = <<-DESC
-                   Shared methods for Codigo inhouse devs
+                   Shared methods for Codigo inhouse developers. This is to levergae the power of a pool of shared tools prevent reinventing the wheel, speed up development, eradicate bugs and improve code performance constantly.
                    DESC
 
   s.homepage     = "https://github.com/sgcodigo/CDGSwiftSDK"

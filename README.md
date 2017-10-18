@@ -1,7 +1,7 @@
 ## CDGSwiftSDK
 
-[![Build Status](https://api.travis-ci.org/sgcodigo/CDGSwiftExtensions.svg?branch=master)](https://travis-ci.org/sgcodigo/CDGSwiftExtensions)
-[![codecov.io](https://codecov.io/gh/sgcodigo/CDGSwiftExtensions/branch/master/graphs/badge.svg)](https://codecov.io/gh/sgcodigo/CDGSwiftExtensions/branch/master)
+[![Build Status](https://api.travis-ci.org/sgcodigo/CDGSwiftSDK.svg?branch=master)](https://travis-ci.org/sgcodigo/CDGSwiftSDK)
+[![codecov.io](https://codecov.io/gh/sgcodigo/CDGSwiftSDK/branch/master/graphs/badge.svg)](https://codecov.io/gh/sgcodigo/CDGSwiftExtensions/branch/master)
 
 
 iOS SDK for developers, Codigo style.

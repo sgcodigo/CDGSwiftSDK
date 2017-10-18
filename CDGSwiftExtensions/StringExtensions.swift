@@ -11,38 +11,6 @@ import Foundation
 extension String {
     /**
      CDGSwiftSDK
-     Return a version of the string with whitespace chars from both ends of string removed. Empty string will be returned if string contains only whitespace characters.
-     */
-    public var trimmed: String {
-        return self.trimmingCharacters(in: NSCharacterSet.whitespaces)
-    }
-    
-    /**
-     CDGSwiftSDK
-     TODO test?
-     */
-    public var unescaped: String {
-        let entities = ["\0", "\t", "\n", "\r", "\"", "\'", "\\"]
-        var _self = self
-        for entity in entities {
-            let descriptionCharacters = entity.debugDescription.characters.dropFirst().dropLast()
-            let description = String(descriptionCharacters)
-            _self = _self.replacingOccurrences(of: description, with: entity)
-        }
-        return _self
-    }
-    
-    /**
-     CDGSwiftSDK
-     Return a version of the string with only first letter capitalized of a string, and the rest lower cased
-     */
-    public var capitalized: String {
-        let _self = self.lowercased()
-        return _self.prefix(1).uppercased() + _self.dropFirst()
-    }
-    
-    /**
-     CDGSwiftSDK
      Validate valid email string
      */
     public var isEmail: Bool {
@@ -81,6 +49,38 @@ extension String {
         let alphabetsRegEx = "[a-zA-Z]*"
         let alphabetsTest = NSPredicate(format:"SELF MATCHES %@", alphabetsRegEx)
         return alphabetsTest.evaluate(with: self)
+    }
+    
+    /**
+     CDGSwiftSDK
+     Return a version of the string with whitespace chars from both ends of string removed. Empty string will be returned if string contains only whitespace characters.
+     */
+    public func trim() -> String {
+        return self.trimmingCharacters(in: NSCharacterSet.whitespaces)
+    }
+    
+    /**
+     CDGSwiftSDK
+     TODO test?
+     */
+    public func unescape() -> String {
+        let entities = ["\0", "\t", "\n", "\r", "\"", "\'", "\\"]
+        var _self = self
+        for entity in entities {
+            let descriptionCharacters = entity.debugDescription.characters.dropFirst().dropLast()
+            let description = String(descriptionCharacters)
+            _self = _self.replacingOccurrences(of: description, with: entity)
+        }
+        return _self
+    }
+    
+    /**
+     CDGSwiftSDK
+     Return a version of the string with only first letter capitalized of a string, and the rest lower cased
+     */
+    public func capitalize() -> String {
+        let _self = self.lowercased()
+        return _self.prefix(1).uppercased() + _self.dropFirst()
     }
     
     /**

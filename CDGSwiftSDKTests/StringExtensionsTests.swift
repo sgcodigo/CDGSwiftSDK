@@ -10,19 +10,19 @@ import XCTest
 @testable import CDGSwiftSDK
 
 class StringExtensionsTests: XCTestCase {
-    func testTrimmed() {
+    func testTrim() {
         let string = " codigo    "
-        XCTAssertEqual(string.trimmed, "codigo")
+        XCTAssertEqual(string.trim(), "codigo")
     }
     
-    func testUnescaped() {
+    func testUnescape() {
         // TODO
     }
     
-    func testCapitalized() {
-        XCTAssertEqual("codigo".capitalized, "Codigo")
-        XCTAssertEqual("codigo Pte Ltd".capitalized, "Codigo pte ltd")
-        XCTAssertEqual("1 Codigo Pte Ltd".capitalized, "1 codigo pte ltd")
+    func testCapitalize() {
+        XCTAssertEqual("codigo".capitalize(), "Codigo")
+        XCTAssertEqual("codigo Pte Ltd".capitalize(), "Codigo pte ltd")
+        XCTAssertEqual("1 Codigo Pte Ltd".capitalize(), "1 codigo pte ltd")
     }
     
     func testReplace() {
